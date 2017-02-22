@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_admin" default="compile.module.admin">
+  <dirname property="module.admin.basedir" file="${ant.file.module_admin}"/>
+  
+  <property name="module.jdk.home.admin" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.admin" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.admin" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.admin" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="admin.output.dir" value="${module.admin.basedir}/../../target/production/Admin"/>
+  <property name="admin.testoutput.dir" value="${module.admin.basedir}/../../target/test/Admin"/>
+  
+  <path id="admin.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="admin.module.production.classpath">
+    <pathelement location="${openfire.output.dir}"/>
+    <pathelement location="${basedir}/../lib/ant-contrib.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jstl.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jaxen.jar"/>
+    <pathelement location="${basedir}/../lib/commons-el.jar"/>
+    <pathelement location="${basedir}/../lib/jasper-compiler.jar"/>
+    <pathelement location="${basedir}/../lib/ant-subdirtask.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-logging.jar"/>
+    <pathelement location="${basedir}/../lib/dist/hsqldb.jar"/>
+    <pathelement location="${basedir}/../lib/xmltask.jar"/>
+    <pathelement location="${basedir}/../lib/merge/xpp3.jar"/>
+    <pathelement location="${basedir}/../lib/dist/servlet.jar"/>
+    <pathelement location="${basedir}/../lib/junit.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jmdns.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dom4j.jar"/>
+    <pathelement location="${basedir}/../lib/jasper-runtime.jar"/>
+    <pathelement location="${basedir}/../lib/ant.jar"/>
+    <pathelement location="${basedir}/../lib/dist/mysql.jar"/>
+    <pathelement location="${basedir}/../lib/merge/standard.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty.jar"/>
+    <pathelement location="${basedir}/../lib/dist/mail.jar"/>
+    <pathelement location="${basedir}/../lib/dist/postgres.jar"/>
+    <pathelement location="${basedir}/../lib/merge/shaj.jar"/>
+    <pathelement location="${basedir}/../lib/merge/sitemesh.jar"/>
+    <pathelement location="${basedir}/../lib/dist/jdic.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jzlib.jar"/>
+    <pathelement location="${basedir}/../lib/i4jruntime.jar"/>
+    <pathelement location="${basedir}/../lib/dist/bouncycastle.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-codec.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-httpclient.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty-util.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jsp-api.jar"/>
+    <pathelement location="${basedir}/../lib/merge/stringprep.jar"/>
+    <pathelement location="${basedir}/../lib/jmock.jar"/>
+    <pathelement location="${basedir}/../lib/jmock-junit4.jar"/>
+    <pathelement location="${basedir}/../lib/hamcrest-library.jar"/>
+    <pathelement location="${basedir}/../lib/hamcrest-api.jar"/>
+    <pathelement location="${basedir}/../lib/objenesis.jar"/>
+    <pathelement location="${basedir}/../lib/cglib-nodep.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-lang.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-filter-ssl.jar"/>
+    <pathelement location="${basedir}/../lib/merge/rome.jar"/>
+    <pathelement location="${basedir}/../lib/merge/rome-fetcher.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-core.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-filter-compression.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jdom.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/dwr.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-fileupload.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-io.jar"/>
+    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
+  </path>
+  
+  <path id="admin.runtime.production.module.classpath">
+    <pathelement location="${admin.output.dir}"/>
+    <pathelement location="${openfire.output.dir}"/>
+    <pathelement location="${basedir}/../lib/ant-contrib.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jstl.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jaxen.jar"/>
+    <pathelement location="${basedir}/../lib/commons-el.jar"/>
+    <pathelement location="${basedir}/../lib/jasper-compiler.jar"/>
+    <pathelement location="${basedir}/../lib/ant-subdirtask.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-logging.jar"/>
+    <pathelement location="${basedir}/../lib/dist/hsqldb.jar"/>
+    <pathelement location="${basedir}/../lib/xmltask.jar"/>
+    <pathelement location="${basedir}/../lib/merge/xpp3.jar"/>
+    <pathelement location="${basedir}/../lib/dist/servlet.jar"/>
+    <pathelement location="${basedir}/../lib/junit.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jmdns.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dom4j.jar"/>
+    <pathelement location="${basedir}/../lib/jasper-runtime.jar"/>
+    <pathelement location="${basedir}/../lib/ant.jar"/>
+    <pathelement location="${basedir}/../lib/dist/mysql.jar"/>
+    <pathelement location="${basedir}/../lib/merge/standard.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty.jar"/>
+    <pathelement location="${basedir}/../lib/dist/mail.jar"/>
+    <pathelement location="${basedir}/../lib/dist/postgres.jar"/>
+    <pathelement location="${basedir}/../lib/merge/shaj.jar"/>
+    <pathelement location="${basedir}/../lib/merge/sitemesh.jar"/>
+    <pathelement location="${basedir}/../lib/dist/jdic.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jzlib.jar"/>
+    <pathelement location="${basedir}/../lib/i4jruntime.jar"/>
+    <pathelement location="${basedir}/../lib/dist/bouncycastle.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-codec.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-httpclient.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty-util.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jsp-api.jar"/>
+    <pathelement location="${basedir}/../lib/merge/stringprep.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jstun-0.6.1.jar"/>
+    <pathelement location="${basedir}/../lib/merge/slf4j-api-1.1.0.jar"/>
+    <pathelement location="${basedir}/../lib/merge/slf4j-simple-1.1.0.jar"/>
+    <pathelement location="${basedir}/../lib/ant-jive-edition.jar"/>
+    <pathelement location="${basedir}/../lib/dist/activation.jar"/>
+    <pathelement location="${basedir}/../../src/resources/jar"/>
+    <pathelement location="${basedir}/../lib/jmock.jar"/>
+    <pathelement location="${basedir}/../lib/jmock-junit4.jar"/>
+    <pathelement location="${basedir}/../lib/hamcrest-library.jar"/>
+    <pathelement location="${basedir}/../lib/hamcrest-api.jar"/>
+    <pathelement location="${basedir}/../lib/objenesis.jar"/>
+    <pathelement location="${basedir}/../lib/cglib-nodep.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty-sslengine.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-lang.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-filter-ssl.jar"/>
+    <pathelement location="${basedir}/../lib/merge/rome.jar"/>
+    <pathelement location="${basedir}/../lib/merge/rome-fetcher.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-core.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-filter-compression.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jdom.jar"/>
+    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
+    <pathelement location="${idea.home}/lib/javaee.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/dwr.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-fileupload.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-io.jar"/>
+    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
+  </path>
+  
+  <path id="admin.module.classpath">
+    <pathelement location="${admin.output.dir}"/>
+    <pathelement location="${openfire.testoutput.dir}"/>
+    <pathelement location="${openfire.output.dir}"/>
+    <pathelement location="${basedir}/../lib/ant-contrib.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jstl.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jaxen.jar"/>
+    <pathelement location="${basedir}/../lib/commons-el.jar"/>
+    <pathelement location="${basedir}/../lib/jasper-compiler.jar"/>
+    <pathelement location="${basedir}/../lib/ant-subdirtask.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-logging.jar"/>
+    <pathelement location="${basedir}/../lib/dist/hsqldb.jar"/>
+    <pathelement location="${basedir}/../lib/xmltask.jar"/>
+    <pathelement location="${basedir}/../lib/merge/xpp3.jar"/>
+    <pathelement location="${basedir}/../lib/dist/servlet.jar"/>
+    <pathelement location="${basedir}/../lib/junit.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jmdns.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dom4j.jar"/>
+    <pathelement location="${basedir}/../lib/jasper-runtime.jar"/>
+    <pathelement location="${basedir}/../lib/ant.jar"/>
+    <pathelement location="${basedir}/../lib/dist/mysql.jar"/>
+    <pathelement location="${basedir}/../lib/merge/standard.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty.jar"/>
+    <pathelement location="${basedir}/../lib/dist/mail.jar"/>
+    <pathelement location="${basedir}/../lib/dist/postgres.jar"/>
+    <pathelement location="${basedir}/../lib/merge/shaj.jar"/>
+    <pathelement location="${basedir}/../lib/merge/sitemesh.jar"/>
+    <pathelement location="${basedir}/../lib/dist/jdic.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jzlib.jar"/>
+    <pathelement location="${basedir}/../lib/i4jruntime.jar"/>
+    <pathelement location="${basedir}/../lib/dist/bouncycastle.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-codec.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-httpclient.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty-util.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jsp-api.jar"/>
+    <pathelement location="${basedir}/../lib/merge/stringprep.jar"/>
+    <pathelement location="${basedir}/../lib/jmock.jar"/>
+    <pathelement location="${basedir}/../lib/jmock-junit4.jar"/>
+    <pathelement location="${basedir}/../lib/hamcrest-library.jar"/>
+    <pathelement location="${basedir}/../lib/hamcrest-api.jar"/>
+    <pathelement location="${basedir}/../lib/objenesis.jar"/>
+    <pathelement location="${basedir}/../lib/cglib-nodep.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-lang.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-filter-ssl.jar"/>
+    <pathelement location="${basedir}/../lib/merge/rome.jar"/>
+    <pathelement location="${basedir}/../lib/merge/rome-fetcher.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-core.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-filter-compression.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jdom.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/dwr.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-fileupload.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-io.jar"/>
+    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
+  </path>
+  
+  <path id="admin.runtime.module.classpath">
+    <pathelement location="${admin.testoutput.dir}"/>
+    <pathelement location="${admin.output.dir}"/>
+    <pathelement location="${openfire.testoutput.dir}"/>
+    <pathelement location="${openfire.output.dir}"/>
+    <pathelement location="${basedir}/../lib/ant-contrib.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jstl.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jaxen.jar"/>
+    <pathelement location="${basedir}/../lib/commons-el.jar"/>
+    <pathelement location="${basedir}/../lib/jasper-compiler.jar"/>
+    <pathelement location="${basedir}/../lib/ant-subdirtask.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-logging.jar"/>
+    <pathelement location="${basedir}/../lib/dist/hsqldb.jar"/>
+    <pathelement location="${basedir}/../lib/xmltask.jar"/>
+    <pathelement location="${basedir}/../lib/merge/xpp3.jar"/>
+    <pathelement location="${basedir}/../lib/dist/servlet.jar"/>
+    <pathelement location="${basedir}/../lib/junit.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jmdns.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dom4j.jar"/>
+    <pathelement location="${basedir}/../lib/jasper-runtime.jar"/>
+    <pathelement location="${basedir}/../lib/ant.jar"/>
+    <pathelement location="${basedir}/../lib/dist/mysql.jar"/>
+    <pathelement location="${basedir}/../lib/merge/standard.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty.jar"/>
+    <pathelement location="${basedir}/../lib/dist/mail.jar"/>
+    <pathelement location="${basedir}/../lib/dist/postgres.jar"/>
+    <pathelement location="${basedir}/../lib/merge/shaj.jar"/>
+    <pathelement location="${basedir}/../lib/merge/sitemesh.jar"/>
+    <pathelement location="${basedir}/../lib/dist/jdic.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jzlib.jar"/>
+    <pathelement location="${basedir}/../lib/i4jruntime.jar"/>
+    <pathelement location="${basedir}/../lib/dist/bouncycastle.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-codec.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-httpclient.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty-util.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jsp-api.jar"/>
+    <pathelement location="${basedir}/../lib/merge/stringprep.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jstun-0.6.1.jar"/>
+    <pathelement location="${basedir}/../lib/merge/slf4j-api-1.1.0.jar"/>
+    <pathelement location="${basedir}/../lib/merge/slf4j-simple-1.1.0.jar"/>
+    <pathelement location="${basedir}/../lib/ant-jive-edition.jar"/>
+    <pathelement location="${basedir}/../lib/dist/activation.jar"/>
+    <pathelement location="${basedir}/../../src/resources/jar"/>
+    <pathelement location="${basedir}/../lib/jmock.jar"/>
+    <pathelement location="${basedir}/../lib/jmock-junit4.jar"/>
+    <pathelement location="${basedir}/../lib/hamcrest-library.jar"/>
+    <pathelement location="${basedir}/../lib/hamcrest-api.jar"/>
+    <pathelement location="${basedir}/../lib/objenesis.jar"/>
+    <pathelement location="${basedir}/../lib/cglib-nodep.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jetty-sslengine.jar"/>
+    <pathelement location="${basedir}/../lib/merge/commons-lang.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-filter-ssl.jar"/>
+    <pathelement location="${basedir}/../lib/merge/rome.jar"/>
+    <pathelement location="${basedir}/../lib/merge/rome-fetcher.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-core.jar"/>
+    <pathelement location="${basedir}/../lib/merge/mina-filter-compression.jar"/>
+    <pathelement location="${basedir}/../lib/merge/jdom.jar"/>
+    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
+    <pathelement location="${idea.home}/lib/javaee.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/dwr.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-fileupload.jar"/>
+    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-io.jar"/>
+    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
+    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.admin">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.admin">
+    <patternset refid="excluded.from.module.admin"/>
+  </patternset>
+  
+  
+  <target name="compile.module.admin" depends="compile.module.admin.production,compile.module.admin.tests" description="Compile module Admin"/>
+  
+  <target name="compile.module.admin.production" depends="register.custom.compilers,compile.module.openfire" description="Compile module Admin; production classes"/>
+  
+  <target name="compile.module.admin.tests" depends="register.custom.compilers,compile.module.admin.production" description="compile module Admin; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.admin" description="cleanup module">
+    <delete dir="${admin.output.dir}"/>
+    <delete dir="${admin.testoutput.dir}"/>
+  </target>
+</project>

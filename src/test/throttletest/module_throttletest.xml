@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_throttletest" default="compile.module.throttletest">
+  <dirname property="module.throttletest.basedir" file="${ant.file.module_throttletest}"/>
+  
+  <property name="module.jdk.home.throttletest" value="${jdk.home.1.8}"/>
+  <property name="module.jdk.bin.throttletest" value="${jdk.bin.1.8}"/>
+  <property name="module.jdk.classpath.throttletest" value="jdk.classpath.1.8"/>
+  
+  <property name="compiler.args.throttletest" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="throttletest.output.dir" value="${module.throttletest.basedir}/../../../target/production/ThrottleTest"/>
+  <property name="throttletest.testoutput.dir" value="${module.throttletest.basedir}/../../../target/test/ThrottleTest"/>
+  
+  <path id="throttletest.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="throttletest.module.production.classpath">
+    <path refid="${module.jdk.classpath.throttletest}"/>
+  </path>
+  
+  <path id="throttletest.runtime.production.module.classpath">
+    <pathelement location="${throttletest.output.dir}"/>
+  </path>
+  
+  <path id="throttletest.module.classpath">
+    <path refid="${module.jdk.classpath.throttletest}"/>
+    <pathelement location="${throttletest.output.dir}"/>
+  </path>
+  
+  <path id="throttletest.runtime.module.classpath">
+    <pathelement location="${throttletest.testoutput.dir}"/>
+    <pathelement location="${throttletest.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.throttletest">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.throttletest">
+    <patternset refid="excluded.from.module.throttletest"/>
+  </patternset>
+  
+  
+  <target name="compile.module.throttletest" depends="compile.module.throttletest.production,compile.module.throttletest.tests" description="Compile module ThrottleTest"/>
+  
+  <target name="compile.module.throttletest.production" depends="register.custom.compilers" description="Compile module ThrottleTest; production classes"/>
+  
+  <target name="compile.module.throttletest.tests" depends="register.custom.compilers,compile.module.throttletest.production" description="compile module ThrottleTest; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.throttletest" description="cleanup module">
+    <delete dir="${throttletest.output.dir}"/>
+    <delete dir="${throttletest.testoutput.dir}"/>
+  </target>
+</project>
