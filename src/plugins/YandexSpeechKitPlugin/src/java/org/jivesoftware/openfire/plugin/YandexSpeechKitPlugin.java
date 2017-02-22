@@ -2,14 +2,15 @@ package org.jivesoftware.openfire.plugin;
 
 import org.jivesoftware.openfire.SessionManager;
 import org.jivesoftware.openfire.XMPPServer;
-import org.jivesoftware.openfire.auth.AuthToken;
 import org.jivesoftware.openfire.container.Plugin;
 import org.jivesoftware.openfire.container.PluginManager;
+import org.jivesoftware.openfire.interceptor.PacketInterceptor;
+import org.jivesoftware.openfire.interceptor.PacketRejectedException;
 import org.jivesoftware.openfire.multiplex.ClientSessionConnection;
 import org.jivesoftware.openfire.session.LocalClientSession;
-import org.jivesoftware.openfire.interceptor.*;
 import org.jivesoftware.openfire.session.Session;
-import org.xmpp.packet.*;
+import org.xmpp.packet.JID;
+import org.xmpp.packet.Packet;
 
 import java.io.File;
 
@@ -35,7 +36,7 @@ public class YandexSpeechKitPlugin implements Plugin{
                         "localhost","127.0.0.1");
 
         yaSpeechSession = SessionManager.getInstance().createClientSession(connection);
-        yaSpeechSession.setAuthToken(new AuthToken(speechJID.getNode(), speechJID.getResource() ));
+//        yaSpeechSession.setAuthToken(new AuthToken(speechJID.getNode(), speechJID.getResource() ));
     }
 
     @Override
