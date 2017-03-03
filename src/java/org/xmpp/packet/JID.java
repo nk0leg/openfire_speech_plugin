@@ -58,7 +58,8 @@ import com.googlecode.concurrentlinkedhashmap.ConcurrentLinkedHashMap.Builder;
  * @author Guus der Kinderen, guus.der.kinderen@gmail.com
  */
 @Immutable
-public class JID implements Comparable<JID>, Serializable {
+public class 
+JID implements Comparable<JID>, Serializable {
 
 	private static final long serialVersionUID = 8135170608402192877L;
 	
@@ -798,4 +799,7 @@ public class JID implements Comparable<JID>, Serializable {
     public static boolean equals(String jid1, String jid2) {
         return new JID(jid1).equals(new JID(jid2));
     }
+
+	public JID asBareJID() { return this;
+	}
 }

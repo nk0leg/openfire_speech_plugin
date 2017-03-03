@@ -21,7 +21,6 @@ import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.core.session.IoSession;
 import org.dom4j.io.XMPPPacketReader;
 import org.jivesoftware.openfire.Connection;
-import org.jivesoftware.openfire.XMPPServer;
 import org.jivesoftware.openfire.net.MXParser;
 import org.jivesoftware.openfire.net.ServerTrafficCounter;
 import org.jivesoftware.openfire.net.StanzaHandler;
@@ -146,7 +145,7 @@ public abstract class ConnectionHandler extends IoHandlerAdapter {
             // OF-524: Determine stream:error message.
             final StreamError error;
             if ( cause != null && (cause instanceof XMLNotWellFormedException || (cause.getCause() != null && cause.getCause() instanceof XMLNotWellFormedException) ) ) {
-                error = new StreamError( StreamError.Condition.not_well_formed );
+                error = new StreamError( StreamError.Condition.xml_not_well_formed );
             } else {
                 error = new StreamError( StreamError.Condition.internal_server_error );
             }

@@ -16,19 +16,6 @@
 
 package org.jivesoftware.openfire;
 
-import java.net.InetAddress;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.locks.Lock;
-
 import org.jivesoftware.openfire.audit.AuditStreamIDFactory;
 import org.jivesoftware.openfire.auth.AuthToken;
 import org.jivesoftware.openfire.auth.UnauthorizedException;
@@ -41,20 +28,7 @@ import org.jivesoftware.openfire.http.HttpConnection;
 import org.jivesoftware.openfire.http.HttpSession;
 import org.jivesoftware.openfire.multiplex.ConnectionMultiplexerManager;
 import org.jivesoftware.openfire.server.OutgoingSessionPromise;
-import org.jivesoftware.openfire.session.ClientSession;
-import org.jivesoftware.openfire.session.ClientSessionInfo;
-import org.jivesoftware.openfire.session.ComponentSession;
-import org.jivesoftware.openfire.session.ConnectionMultiplexerSession;
-import org.jivesoftware.openfire.session.GetSessionsCountTask;
-import org.jivesoftware.openfire.session.IncomingServerSession;
-import org.jivesoftware.openfire.session.LocalClientSession;
-import org.jivesoftware.openfire.session.LocalComponentSession;
-import org.jivesoftware.openfire.session.LocalConnectionMultiplexerSession;
-import org.jivesoftware.openfire.session.LocalIncomingServerSession;
-import org.jivesoftware.openfire.session.LocalOutgoingServerSession;
-import org.jivesoftware.openfire.session.OutgoingServerSession;
-import org.jivesoftware.openfire.session.RemoteSessionLocator;
-import org.jivesoftware.openfire.session.Session;
+import org.jivesoftware.openfire.session.*;
 import org.jivesoftware.openfire.spi.BasicStreamIDFactory;
 import org.jivesoftware.openfire.user.UserManager;
 import org.jivesoftware.util.JiveGlobals;
@@ -67,6 +41,11 @@ import org.xmpp.packet.JID;
 import org.xmpp.packet.Message;
 import org.xmpp.packet.Packet;
 import org.xmpp.packet.Presence;
+
+import java.net.InetAddress;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.Lock;
 
 /**
  * Manages the sessions associated with an account. The information
@@ -181,6 +160,7 @@ public class SessionManager extends BasicModule implements ClusterEventListener/
     public SessionManager() {
         super("Session Manager");
         if (JiveGlobals.getBooleanProperty("xmpp.audit.active")) {
+
             streamIDFactory = new AuditStreamIDFactory();
         }
         else {
@@ -316,7 +296,7 @@ public class SessionManager extends BasicModule implements ClusterEventListener/
      * @return a newly created session.
      */
     public LocalClientSession createClientSession(Connection conn) {
-        return createClientSession(conn, nextStreamID(), language);
+        return createClientSession(conn, nextStreamID(), null);
     }
 
     /**
