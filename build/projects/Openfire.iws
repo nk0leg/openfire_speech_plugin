@@ -2,17 +2,136 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e181ea0d-d73e-4324-91dd-14c57e857ceb" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lib/org/xmpp/packet/annotations.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/ConcurrentHashMapV8.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/ConcurrentLinkedHashMap.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/EntryWeigher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/EvictionListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/LinkedDeque.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/Weigher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/Weighers.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/Makefile.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/Makefile.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/CombiningClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/Composition.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/DecompositionKeys.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/DecompositionMappings.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/IDNA.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/IDNAException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/Makefile.am" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/Makefile.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/NFKC.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/Punycode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/PunycodeException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/RFC3454.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/Stringprep.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/gnu/inet/encoding/StringprepException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/CheckForNull.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/CheckForSigned.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/CheckReturnValue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/Detainted.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/MatchesPattern.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/Nonnegative.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/Nonnull.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/Nullable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/OverridingMethodsMustInvokeSuper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/ParametersAreNonnullByDefault.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/PropertyKey.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/RegEx.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/Signed.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/Syntax.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/Tainted.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/Untainted.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/WillClose.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/WillCloseWhenClosed.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/WillNotClose.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/concurrent/GuardedBy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/concurrent/Immutable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/concurrent/NotThreadSafe.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/concurrent/ThreadSafe.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/meta/Exclusive.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/meta/Exhaustive.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/meta/TypeQualifier.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/meta/TypeQualifierDefault.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/meta/TypeQualifierNickname.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/meta/TypeQualifierValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/javax/annotation/meta/When.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/net/jcip/annotations/GuardedBy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/net/jcip/annotations/Immutable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/net/jcip/annotations/NotThreadSafe.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/net/jcip/annotations/ThreadSafe.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/net/jcip/annotations/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/ILoggerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/IMarkerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/Logger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/LoggerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/MDC.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/Marker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/MarkerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/event/EventConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/event/EventRecodingLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/event/Level.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/event/LoggingEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/event/SubstituteLoggingEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/BasicMDCAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/BasicMarker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/BasicMarkerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/FormattingTuple.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/MarkerIgnoringBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/MessageFormatter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/NOPLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/NOPLoggerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/NOPMDCAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/NamedLoggerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/SubstituteLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/SubstituteLoggerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/Util.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/helpers/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/impl/StaticLoggerBinder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/impl/StaticMDCBinder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/impl/StaticMarkerBinder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/impl/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/spi/LocationAwareLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/spi/LoggerFactoryBinder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/spi/MDCAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/spi/MarkerFactoryBinder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/slf4j/spi/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/component/AbstractComponent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/component/Component.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/component/ComponentException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/component/ComponentManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/component/ComponentManagerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/component/IQResultListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/forms/DataForm.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/forms/FormField.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/muc/DestroyRoom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/muc/Invitation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/muc/JoinRoom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/muc/LeaveRoom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/muc/RoomConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/IQ.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/JID.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/Message.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/Packet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/PacketError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/PacketExtension.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/Presence.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/Roster.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/StreamError.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/resultsetmanagement/Result.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/resultsetmanagement/ResultSet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/resultsetmanagement/ResultSetImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/util/ValueWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/util/XMPPConstants.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Openfire.iml" afterPath="$PROJECT_DIR$/Openfire.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Openfire.ipr" afterPath="$PROJECT_DIR$/Openfire.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Openfire.iws" afterPath="$PROJECT_DIR$/Openfire.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plugins.iml" afterPath="$PROJECT_DIR$/Plugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/ConcurrentHashMapV8.java" afterPath="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/ConcurrentHashMapV8.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/SessionManager.java" afterPath="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/SessionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/nio/ConnectionHandler.java" afterPath="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/nio/ConnectionHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/session/LocalClientSession.java" afterPath="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/session/LocalClientSession.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/JID.java" afterPath="$PROJECT_DIR$/../../src/java/org/xmpp/packet/JID.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java" afterPath="$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/plugins/websocket/src/java/org/jivesoftware/openfire/websocket/XmppWebSocket.java" afterPath="$PROJECT_DIR$/../../src/plugins/websocket/src/java/org/jivesoftware/openfire/websocket/XmppWebSocket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../src/java/org/jivesoftware/util/FastDateFormat.java" afterPath="$PROJECT_DIR$/../../src/java/org/jivesoftware/util/FastDateFormat.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../../target/" />
     <ignored path="$PROJECT_DIR$/../../make/" />
@@ -38,21 +157,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="YandexSpeechKitPlugin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-522">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,32 +169,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../build.xml">
+      <file leaf-file-name="PluginManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/container/PluginManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="1342" column="16" lean-forward="true" selection-start-line="1342" selection-start-column="16" selection-end-line="1342" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="-1853">
+              <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YandexSpeechPacketInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechPacketInterceptor.java">
+      <file leaf-file-name="ConnectionListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/spi/ConnectionListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../src/plugins/xmldebugger/plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="323">
+              <caret line="70" column="7" lean-forward="false" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,14 +240,16 @@
         <option value="$PROJECT_DIR$/../../src/plugins/fastpath/src/java/org/jivesoftware/xmpp/workgroup/interceptor/PacketInterceptor.java" />
         <option value="$PROJECT_DIR$/../build.xml" />
         <option value="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/session/LocalClientSession.java" />
-        <option value="$PROJECT_DIR$/../../src/java/org/xmpp/packet/JID.java" />
-        <option value="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/group/GroupJID.java" />
         <option value="$PROJECT_DIR$/../../src/java/org/xmpp/packet/StreamError.java" />
         <option value="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/nio/ConnectionHandler.java" />
-        <option value="$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java" />
         <option value="$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/ConcurrentHashMapV8.java" />
         <option value="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/SessionManager.java" />
         <option value="$PROJECT_DIR$/../../src/plugins/websocket/src/java/org/jivesoftware/openfire/websocket/XmppWebSocket.java" />
+        <option value="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/group/GroupJID.java" />
+        <option value="$PROJECT_DIR$/../../src/test/java/org/jivesoftware/openfire/group/GroupJIDTest.java" />
+        <option value="$PROJECT_DIR$/../../src/java/org/xmpp/packet/JID.java" />
+        <option value="$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/spi/ConnectionListener.java" />
+        <option value="$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java" />
       </list>
     </option>
   </component>
@@ -175,7 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -275,76 +379,6 @@
               <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmldebugger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Openfire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Openfire_lux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmldebugger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Openfire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Openfire_lux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Openfire" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Openfire_lux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emailListener" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -374,14 +408,161 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire_lux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jivesoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire_lux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jivesoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openfire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire_lux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jivesoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openfire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire_lux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jivesoftware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openfire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="container" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openfire_lux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,9 +574,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="createclientSe&#9;PSI&#9;JAVA://org.jivesoftware.openfire.SessionManager#createClientSession&#10;Session&#9;FILE&#9;file://D:/Work/Openfire_lux/src/java/org/jivesoftware/openfire/session/LocalSession.java&#10;Mess&#9;PSI&#9;JAVA://org.jivesoftware.openfire.plugin.rules.Rule.PacketType#Message" />
+    <property name="SearchEverywhereHistoryKey" value="asBareJID&#9;PSI&#9;JAVA://org.jivesoftware.openfire.group.GroupJID#asBareJID&#10;createclientSe&#9;PSI&#9;JAVA://org.jivesoftware.openfire.SessionManager#createClientSession&#10;Session&#9;FILE&#9;file://D:/Work/Openfire_lux/src/java/org/jivesoftware/openfire/session/LocalSession.java&#10;Mess&#9;PSI&#9;JAVA://org.jivesoftware.openfire.plugin.rules.Rule.PacketType#Message" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../spark/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lib/slf4j-simple-1.7.25.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -691,16 +872,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.49784946" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33590308" sideWeight="0.65967745" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33590308" sideWeight="0.5763441" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33590308" sideWeight="0.34032258" order="7" side_tool="true" content_ui="tabs" x="30" y="367" width="1860" height="304" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33590308" sideWeight="0.42365593" order="7" side_tool="true" content_ui="tabs" x="30" y="367" width="1860" height="304" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295699" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.49784946" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -708,7 +889,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.49569893" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2629032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27096775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.49784946" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.4935484" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25215054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -720,7 +903,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32819384" sideWeight="0.4935484" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -811,105 +993,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/fastpath/src/java/org/jivesoftware/xmpp/workgroup/interceptor/UserInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2839">
-          <caret line="200" column="68" lean-forward="false" selection-start-line="200" selection-start-column="67" selection-end-line="200" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/interceptor/PacketInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/java/org/xmpp/packet/Packet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="35" column="69" lean-forward="false" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22576">
-          <caret line="1328" column="69" lean-forward="false" selection-start-line="1328" selection-start-column="69" selection-end-line="1328" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/fastpath/src/java/org/jivesoftware/xmpp/workgroup/interceptor/PacketInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/fastpath/src/java/org/jivesoftware/xmpp/workgroup/interceptor/UserInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2839">
-          <caret line="200" column="68" lean-forward="false" selection-start-line="200" selection-start-column="67" selection-end-line="200" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/broadcast/src/java/org/jivesoftware/openfire/plugin/BroadcastPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="61" column="13" lean-forward="false" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKit/src/java/org/jivesoftware/openfire/YandexSpeechKitPlugin.java" />
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/xmldebugger/src/java/org/jivesoftware/openfire/plugin/DebuggerPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/container/Plugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="64" column="17" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKit/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java" />
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKit/plugin.xml" />
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/loadStats/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../src/plugins/xmldebugger/src/web/debugger-conf.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1009,24 +1092,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/group/GroupJID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="117" column="7" lean-forward="true" selection-start-line="117" selection-start-column="7" selection-end-line="117" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../src/plugins/fastpath/src/java/org/jivesoftware/xmpp/workgroup/interceptor/PacketInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/java/org/xmpp/packet/StreamError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="391" column="27" lean-forward="false" selection-start-line="391" selection-start-column="8" selection-end-line="391" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1052,79 +1121,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/java/org/xmpp/packet/JID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#17784#17785#0" expanded="false" />
-            <element signature="e#17823#17824#0" expanded="false" />
-            <element signature="e#18253#18254#0" expanded="false" />
-            <element signature="e#18301#18302#0" expanded="false" />
-            <element signature="e#18364#18365#0" expanded="false" />
-            <element signature="e#18427#18428#0" expanded="false" />
-            <element signature="e#18838#18839#0" expanded="false" />
-            <element signature="e#18889#18890#0" expanded="false" />
-            <element signature="e#23117#23118#0" expanded="false" />
-            <element signature="e#23144#23145#0" expanded="false" />
-            <element signature="e#23254#23255#0" expanded="false" />
-            <element signature="e#23283#23284#0" expanded="false" />
-            <element signature="e#23467#23468#0" expanded="false" />
-            <element signature="e#23498#23499#0" expanded="false" />
-            <element signature="e#25404#25405#0" expanded="false" />
-            <element signature="e#25448#25449#0" expanded="false" />
-            <element signature="e#27865#27866#0" expanded="false" />
-            <element signature="e#27923#27924#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../src/java/com/googlecode/concurrentlinkedhashmap/ConcurrentHashMapV8.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63087">
           <caret line="3759" column="0" lean-forward="false" selection-start-line="3759" selection-start-column="0" selection-end-line="3759" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#168146#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#31042#31043#0" expanded="false" />
-            <element signature="e#31107#31108#0" expanded="false" />
-            <element signature="e#33059#33060#0" expanded="false" />
-            <element signature="e#33110#33111#0" expanded="false" />
-            <element signature="e#39964#39965#0" expanded="false" />
-            <element signature="e#40016#40017#0" expanded="false" />
-            <element signature="e#41841#41842#0" expanded="false" />
-            <element signature="e#41916#41917#0" expanded="false" />
-            <element signature="e#43590#43591#0" expanded="false" />
-            <element signature="e#43629#43630#0" expanded="false" />
-            <element signature="e#45285#45286#0" expanded="false" />
-            <element signature="e#45333#45334#0" expanded="false" />
-            <element signature="e#49088#49089#0" expanded="false" />
-            <element signature="e#49139#49140#0" expanded="false" />
-            <element signature="e#66472#66473#0" expanded="false" />
-            <element signature="e#66519#66520#0" expanded="false" />
-            <element signature="e#89894#89895#0" expanded="false" />
-            <element signature="e#89937#89938#0" expanded="false" />
-            <element signature="e#94466#94467#0" expanded="false" />
-            <element signature="e#94523#94524#0" expanded="false" />
-            <element signature="e#94584#94585#0" expanded="false" />
-            <element signature="e#94619#94620#0" expanded="false" />
-            <element signature="e#108690#108691#0" expanded="false" />
-            <element signature="e#108745#108746#0" expanded="false" />
-            <element signature="e#113770#113771#0" expanded="false" />
-            <element signature="e#113807#113808#0" expanded="false" />
-            <element signature="e#154640#154641#0" expanded="false" />
-            <element signature="e#154691#154692#0" expanded="false" />
-            <element signature="e#155388#155389#0" expanded="false" />
-            <element signature="e#155453#155454#0" expanded="false" />
-            <element signature="e#155536#155537#0" expanded="false" />
-            <element signature="e#155601#155602#0" expanded="false" />
-            <element signature="e#157927#157928#0" expanded="false" />
-            <element signature="e#158009#158010#0" expanded="false" />
-            <element signature="e#160903#160920#0" expanded="false" />
-            <element signature="e#167344#167935#0" expanded="false" />
-            <element signature="e#167934#167935#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,28 +1132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/session/LocalSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="e#4622#4623#0" expanded="false" />
-            <element signature="e#4652#4653#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../lib/merge/dom4j.jar!/org/dom4j/Element.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1168,23 +1146,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/SessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="297" column="30" lean-forward="false" selection-start-line="297" selection-start-column="30" selection-end-line="297" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6954#6955#0" expanded="true" />
-            <element signature="e#7021#7022#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../src/plugins/xmldebugger/changelog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,29 +1188,225 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java">
+    <entry file="file://$PROJECT_DIR$/../../../spark/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5865">
+          <caret line="345" column="26" lean-forward="false" selection-start-line="345" selection-start-column="26" selection-end-line="345" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-443">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/xmpp/packet/StreamError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="391" column="27" lean-forward="false" selection-start-line="391" selection-start-column="8" selection-end-line="391" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../lib/merge/dom4j.jar!/org/dom4j/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/ServerPort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/xmpp/packet/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/xmpp/packet/IQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/xmpp/packet/Roster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/session/LocalSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="132" column="7" lean-forward="false" selection-start-line="132" selection-start-column="7" selection-end-line="132" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4622#4623#0" expanded="true" />
+            <element signature="e#4652#4653#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../lib/tinder-1.2.2.jar!/org/xmpp/packet/JID.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../spark/README.md">
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/group/GroupCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../build.xml">
+    <entry file="file://$PROJECT_DIR$/../../src/test/java/org/jivesoftware/openfire/group/GroupJIDTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="1342" column="16" lean-forward="true" selection-start-line="1342" selection-start-column="16" selection-end-line="1342" selection-end-column="16" />
+        <state relative-caret-position="68">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/group/GroupJID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="96" column="22" lean-forward="false" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/SessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="684" column="50" lean-forward="false" selection-start-line="684" selection-start-column="50" selection-end-line="684" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/xmpp/packet/JID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="654" column="68" lean-forward="false" selection-start-line="654" selection-start-column="68" selection-end-line="654" selection-end-column="68" />
+          <folding>
+            <element signature="e#17780#17781#0" expanded="true" />
+            <element signature="e#17819#17820#0" expanded="true" />
+            <element signature="e#23526#23527#0" expanded="true" />
+            <element signature="e#23584#23585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../lib/slf4j-api-1.5.8.jar!/org/slf4j/Marker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/spi/ConnectionConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../lib/slf4j-simple-1.5.8.jar!/org/slf4j/impl/StaticMarkerBinder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="143" column="17" lean-forward="false" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java/org/jivesoftware/openfire/plugin/YandexSpeechKitPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../lib/slf4j-api-1.7.25.jar!/org/slf4j/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/spi/ConnectionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="70" column="7" lean-forward="false" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../src/java/org/jivesoftware/openfire/container/PluginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1853">
+          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
