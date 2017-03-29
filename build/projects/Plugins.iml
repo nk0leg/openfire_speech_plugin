@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module relativePaths="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/plugins-dev" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../src/plugins">
@@ -25,14 +25,33 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/plugins/userImportExport/src/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../src/plugins/userservice/src/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../src/plugins/xmldebugger/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../src/plugins/YandexSpeechKit/src/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../src/plugins/YandexSpeechKitPlugin/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/plugins/parrotbot/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/plugins/YTranslateBot/src/java" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../../src/plugins/enterprise" />
       <excludeFolder url="file://$MODULE_DIR$/../../src/plugins/gateway" />
     </content>
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Openfire" exported="" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../src/plugins/userImportExport/lib/xsdlib.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../src/plugins/userImportExport/lib/msv.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -42,25 +61,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../src/plugins/userImportExport/lib/xsdlib.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../src/plugins/userImportExport/lib/msv.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../src/plugins/userImportExport/lib/isorelax.jar!/" />
@@ -69,8 +70,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="Admin" exported="" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module" module-name="Admin" />
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../src/plugins/userImportExport/lib/commons-fileupload-1.0.jar!/" />
@@ -79,7 +80,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../src/plugins/sip/lib/JainSipApi1.1.jar!/" />
@@ -88,7 +89,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../src/plugins/sip/lib/nist-sip-1.2.jar!/" />
@@ -106,7 +107,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../src/plugins/fastpath/lib/xstream.jar!/" />
@@ -115,7 +116,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../src/plugins/monitoring/lib/jrobin.jar!/" />
@@ -124,7 +125,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../src/plugins/fastpath/lib/commons-fileupload-1.0.jar!/" />
@@ -187,19 +188,10 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../lib/slf4j-api-1.7.25.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../lib/slf4j-simple-1.7.25.jar!/" />
+          <root url="jar://$MODULE_DIR$/../lib/merge/tinder.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
