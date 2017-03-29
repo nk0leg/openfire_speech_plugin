@@ -84,72 +84,12 @@
   
   <path id="plugins.runtime.production.module.classpath">
     <pathelement location="${plugins.output.dir}"/>
-    <pathelement location="${openfire.output.dir}"/>
-    <pathelement location="${basedir}/../lib/ant-contrib.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jstl.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jaxen.jar"/>
-    <pathelement location="${basedir}/../lib/commons-el.jar"/>
-    <pathelement location="${basedir}/../lib/jasper-compiler.jar"/>
-    <pathelement location="${basedir}/../lib/ant-subdirtask.jar"/>
-    <pathelement location="${basedir}/../lib/merge/commons-logging.jar"/>
-    <pathelement location="${basedir}/../lib/dist/hsqldb.jar"/>
-    <pathelement location="${basedir}/../lib/xmltask.jar"/>
-    <pathelement location="${basedir}/../lib/merge/xpp3.jar"/>
-    <pathelement location="${basedir}/../lib/dist/servlet.jar"/>
-    <pathelement location="${basedir}/../lib/junit.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jmdns.jar"/>
-    <pathelement location="${basedir}/../lib/merge/dom4j.jar"/>
-    <pathelement location="${basedir}/../lib/jasper-runtime.jar"/>
-    <pathelement location="${basedir}/../lib/ant.jar"/>
-    <pathelement location="${basedir}/../lib/dist/mysql.jar"/>
-    <pathelement location="${basedir}/../lib/merge/standard.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jetty.jar"/>
-    <pathelement location="${basedir}/../lib/dist/mail.jar"/>
-    <pathelement location="${basedir}/../lib/dist/postgres.jar"/>
-    <pathelement location="${basedir}/../lib/merge/shaj.jar"/>
-    <pathelement location="${basedir}/../lib/merge/sitemesh.jar"/>
-    <pathelement location="${basedir}/../lib/dist/jdic.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jzlib.jar"/>
-    <pathelement location="${basedir}/../lib/i4jruntime.jar"/>
-    <pathelement location="${basedir}/../lib/dist/bouncycastle.jar"/>
-    <pathelement location="${basedir}/../lib/merge/commons-codec.jar"/>
-    <pathelement location="${basedir}/../lib/merge/commons-httpclient.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jetty-util.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jsp-api.jar"/>
-    <pathelement location="${basedir}/../lib/merge/stringprep.jar"/>
-    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jstun-0.6.1.jar"/>
-    <pathelement location="${basedir}/../lib/merge/slf4j-api-1.1.0.jar"/>
-    <pathelement location="${basedir}/../lib/merge/slf4j-simple-1.1.0.jar"/>
-    <pathelement location="${basedir}/../lib/ant-jive-edition.jar"/>
-    <pathelement location="${basedir}/../lib/dist/activation.jar"/>
-    <pathelement location="${basedir}/../../src/resources/jar"/>
-    <pathelement location="${basedir}/../lib/jmock.jar"/>
-    <pathelement location="${basedir}/../lib/jmock-junit4.jar"/>
-    <pathelement location="${basedir}/../lib/hamcrest-library.jar"/>
-    <pathelement location="${basedir}/../lib/hamcrest-api.jar"/>
-    <pathelement location="${basedir}/../lib/objenesis.jar"/>
-    <pathelement location="${basedir}/../lib/cglib-nodep.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jetty-sslengine.jar"/>
-    <pathelement location="${basedir}/../lib/merge/commons-lang.jar"/>
-    <pathelement location="${basedir}/../lib/merge/mina-filter-ssl.jar"/>
-    <pathelement location="${basedir}/../lib/merge/rome.jar"/>
-    <pathelement location="${basedir}/../lib/merge/rome-fetcher.jar"/>
-    <pathelement location="${basedir}/../lib/merge/mina-core.jar"/>
-    <pathelement location="${basedir}/../lib/merge/mina-filter-compression.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jdom.jar"/>
-    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
-    <pathelement location="${idea.home}/lib/javaee.jar"/>
+    <path refid="openfire.runtime.production.module.classpath"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/xsdlib.jar"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/msv.jar"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/relaxngDatatype.jar"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/isorelax.jar"/>
-    <pathelement location="${admin.output.dir}"/>
-    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/dwr.jar"/>
-    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-fileupload.jar"/>
-    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-io.jar"/>
-    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
-    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
+    <path refid="admin.runtime.production.module.classpath"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/commons-fileupload-1.0.jar"/>
     <pathelement location="${basedir}/../../src/plugins/sip/lib/JainSipApi1.1.jar"/>
     <pathelement location="${basedir}/../../src/plugins/sip/lib/nist-sip-1.2.jar"/>
@@ -237,74 +177,12 @@
   
   <path id="plugins.runtime.module.classpath">
     <pathelement location="${plugins.output.dir}"/>
-    <pathelement location="${openfire.testoutput.dir}"/>
-    <pathelement location="${openfire.output.dir}"/>
-    <pathelement location="${basedir}/../lib/ant-contrib.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jstl.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jaxen.jar"/>
-    <pathelement location="${basedir}/../lib/commons-el.jar"/>
-    <pathelement location="${basedir}/../lib/jasper-compiler.jar"/>
-    <pathelement location="${basedir}/../lib/ant-subdirtask.jar"/>
-    <pathelement location="${basedir}/../lib/merge/commons-logging.jar"/>
-    <pathelement location="${basedir}/../lib/dist/hsqldb.jar"/>
-    <pathelement location="${basedir}/../lib/xmltask.jar"/>
-    <pathelement location="${basedir}/../lib/merge/xpp3.jar"/>
-    <pathelement location="${basedir}/../lib/dist/servlet.jar"/>
-    <pathelement location="${basedir}/../lib/junit.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jmdns.jar"/>
-    <pathelement location="${basedir}/../lib/merge/dom4j.jar"/>
-    <pathelement location="${basedir}/../lib/jasper-runtime.jar"/>
-    <pathelement location="${basedir}/../lib/ant.jar"/>
-    <pathelement location="${basedir}/../lib/dist/mysql.jar"/>
-    <pathelement location="${basedir}/../lib/merge/standard.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jetty.jar"/>
-    <pathelement location="${basedir}/../lib/dist/mail.jar"/>
-    <pathelement location="${basedir}/../lib/dist/postgres.jar"/>
-    <pathelement location="${basedir}/../lib/merge/shaj.jar"/>
-    <pathelement location="${basedir}/../lib/merge/sitemesh.jar"/>
-    <pathelement location="${basedir}/../lib/dist/jdic.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jzlib.jar"/>
-    <pathelement location="${basedir}/../lib/i4jruntime.jar"/>
-    <pathelement location="${basedir}/../lib/dist/bouncycastle.jar"/>
-    <pathelement location="${basedir}/../lib/merge/commons-codec.jar"/>
-    <pathelement location="${basedir}/../lib/merge/commons-httpclient.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jetty-util.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jsp-api.jar"/>
-    <pathelement location="${basedir}/../lib/merge/stringprep.jar"/>
-    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jstun-0.6.1.jar"/>
-    <pathelement location="${basedir}/../lib/merge/slf4j-api-1.1.0.jar"/>
-    <pathelement location="${basedir}/../lib/merge/slf4j-simple-1.1.0.jar"/>
-    <pathelement location="${basedir}/../lib/ant-jive-edition.jar"/>
-    <pathelement location="${basedir}/../lib/dist/activation.jar"/>
-    <pathelement location="${basedir}/../../src/resources/jar"/>
-    <pathelement location="${basedir}/../lib/jmock.jar"/>
-    <pathelement location="${basedir}/../lib/jmock-junit4.jar"/>
-    <pathelement location="${basedir}/../lib/hamcrest-library.jar"/>
-    <pathelement location="${basedir}/../lib/hamcrest-api.jar"/>
-    <pathelement location="${basedir}/../lib/objenesis.jar"/>
-    <pathelement location="${basedir}/../lib/cglib-nodep.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jetty-sslengine.jar"/>
-    <pathelement location="${basedir}/../lib/merge/commons-lang.jar"/>
-    <pathelement location="${basedir}/../lib/merge/mina-filter-ssl.jar"/>
-    <pathelement location="${basedir}/../lib/merge/rome.jar"/>
-    <pathelement location="${basedir}/../lib/merge/rome-fetcher.jar"/>
-    <pathelement location="${basedir}/../lib/merge/mina-core.jar"/>
-    <pathelement location="${basedir}/../lib/merge/mina-filter-compression.jar"/>
-    <pathelement location="${basedir}/../lib/merge/jdom.jar"/>
-    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
-    <pathelement location="${idea.home}/lib/javaee.jar"/>
+    <path refid="openfire.runtime.module.classpath"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/xsdlib.jar"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/msv.jar"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/relaxngDatatype.jar"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/isorelax.jar"/>
-    <pathelement location="${admin.testoutput.dir}"/>
-    <pathelement location="${admin.output.dir}"/>
-    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/dwr.jar"/>
-    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-fileupload.jar"/>
-    <pathelement location="${basedir}/../../src/web/WEB-INF/lib/commons-io.jar"/>
-    <pathelement location="${basedir}/../lib/merge/proxool.jar"/>
-    <pathelement location="${basedir}/../lib/merge/dbutil.jar"/>
+    <path refid="admin.runtime.module.classpath"/>
     <pathelement location="${basedir}/../../src/plugins/userImportExport/lib/commons-fileupload-1.0.jar"/>
     <pathelement location="${basedir}/../../src/plugins/sip/lib/JainSipApi1.1.jar"/>
     <pathelement location="${basedir}/../../src/plugins/sip/lib/nist-sip-1.2.jar"/>
@@ -329,112 +207,10 @@
     <patternset refid="excluded.from.module.plugins"/>
   </patternset>
   
-  <path id="plugins.module.sourcepath">
-    <dirset dir="${module.plugins.basedir}/../../src/plugins">
-      <include name="broadcast/src/java"/>
-      <include name="contentFilter/src/java"/>
-      <include name="emailListener/src/java"/>
-      <include name="fastpath/src/java"/>
-      <include name="loadStats/src/java"/>
-      <include name="monitoring/src/java"/>
-      <include name="motd/src/java"/>
-      <include name="packetFilter/src/java"/>
-      <include name="presence/src/java"/>
-      <include name="registration/src/java"/>
-      <include name="search/src/java"/>
-      <include name="sip/src/java"/>
-      <include name="subscription/src/java"/>
-      <include name="userCreation/src/java"/>
-      <include name="userImportExport/src/java"/>
-      <include name="userservice/src/java"/>
-      <include name="xmldebugger/src/java"/>
-    </dirset>
-  </path>
-  
   
   <target name="compile.module.plugins" depends="compile.module.plugins.production,compile.module.plugins.tests" description="Compile module Plugins"/>
   
-  <target name="compile.module.plugins.production" depends="register.custom.compilers,compile.module.openfire,compile.module.admin" description="Compile module Plugins; production classes">
-    <mkdir dir="${plugins.output.dir}"/>
-    <javac2 destdir="${plugins.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.plugins}/javac">
-      <compilerarg line="${compiler.args.plugins}"/>
-      <bootclasspath refid="plugins.module.bootclasspath"/>
-      <classpath refid="plugins.module.production.classpath"/>
-      <src refid="plugins.module.sourcepath"/>
-      <patternset refid="excluded.from.compilation.plugins"/>
-    </javac2>
-    
-    <copy todir="${plugins.output.dir}">
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/broadcast/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/contentFilter/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/emailListener/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/fastpath/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/loadStats/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/monitoring/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/motd/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/packetFilter/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/presence/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/registration/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/search/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/sip/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/subscription/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/userCreation/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/userImportExport/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/userservice/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.plugins.basedir}/../../src/plugins/xmldebugger/src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-    </copy>
-  </target>
+  <target name="compile.module.plugins.production" depends="register.custom.compilers,compile.module.openfire,compile.module.admin" description="Compile module Plugins; production classes"/>
   
   <target name="compile.module.plugins.tests" depends="register.custom.compilers,compile.module.plugins.production" description="compile module Plugins; test classes" unless="skip.tests"/>
   

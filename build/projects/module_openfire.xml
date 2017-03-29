@@ -260,71 +260,12 @@
     <patternset refid="excluded.from.module.openfire"/>
   </patternset>
   
-  <path id="openfire.module.sourcepath">
-    <dirset dir="${module.openfire.basedir}/../../../Openfire">
-      <include name="src/i18n"/>
-      <include name="src/java"/>
-    </dirset>
-  </path>
-  
-  <path id="openfire.module.test.sourcepath">
-    <dirset dir="${module.openfire.basedir}/../../../Openfire">
-      <include name="src/test/java"/>
-      <include name="src/test/resources"/>
-      <include name="src/test/throttletest/src"/>
-    </dirset>
-  </path>
-  
   
   <target name="compile.module.openfire" depends="compile.module.openfire.production,compile.module.openfire.tests" description="Compile module Openfire"/>
   
-  <target name="compile.module.openfire.production" depends="register.custom.compilers" description="Compile module Openfire; production classes">
-    <mkdir dir="${openfire.output.dir}"/>
-    <javac2 destdir="${openfire.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.openfire}/javac">
-      <compilerarg line="${compiler.args.openfire}"/>
-      <bootclasspath refid="openfire.module.bootclasspath"/>
-      <classpath refid="openfire.module.production.classpath"/>
-      <src refid="openfire.module.sourcepath"/>
-      <patternset refid="excluded.from.compilation.openfire"/>
-    </javac2>
-    
-    <copy todir="${openfire.output.dir}">
-      <fileset dir="${module.openfire.basedir}/../../src/i18n">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.openfire.basedir}/../../src/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-    </copy>
-  </target>
+  <target name="compile.module.openfire.production" depends="register.custom.compilers" description="Compile module Openfire; production classes"/>
   
-  <target name="compile.module.openfire.tests" depends="register.custom.compilers,compile.module.openfire.production" description="compile module Openfire; test classes" unless="skip.tests">
-    <mkdir dir="${openfire.testoutput.dir}"/>
-    <javac2 destdir="${openfire.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.openfire}/javac">
-      <compilerarg line="${compiler.args.openfire}"/>
-      <bootclasspath refid="openfire.module.bootclasspath"/>
-      <classpath refid="openfire.module.classpath"/>
-      <src refid="openfire.module.test.sourcepath"/>
-      <patternset refid="excluded.from.compilation.openfire"/>
-    </javac2>
-    
-    <copy todir="${openfire.testoutput.dir}">
-      <fileset dir="${module.openfire.basedir}/../../src/test/java">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.openfire.basedir}/../../src/test/resources">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-      <fileset dir="${module.openfire.basedir}/../../src/test/throttletest/src">
-        <patternset refid="compiler.resources"/>
-        <type type="file"/>
-      </fileset>
-    </copy>
-  </target>
+  <target name="compile.module.openfire.tests" depends="register.custom.compilers,compile.module.openfire.production" description="compile module Openfire; test classes" unless="skip.tests"/>
   
   <target name="clean.module.openfire" description="cleanup module">
     <delete dir="${openfire.output.dir}"/>

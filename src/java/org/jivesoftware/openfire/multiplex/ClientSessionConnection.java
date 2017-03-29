@@ -24,6 +24,8 @@ import org.jivesoftware.openfire.session.ConnectionMultiplexerSession;
 import org.jivesoftware.openfire.spi.ConnectionConfiguration;
 import org.jivesoftware.openfire.spi.ConnectionManagerImpl;
 import org.jivesoftware.openfire.spi.ConnectionType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.xmpp.packet.IQ;
 import org.xmpp.packet.Packet;
 
@@ -39,7 +41,7 @@ import java.net.UnknownHostException;
  * @author Gaston Dombiak
  */
 public class ClientSessionConnection extends VirtualConnection {
-
+    private static final Logger Log = LoggerFactory.getLogger(ClientSessionConnection.class);
     private String connectionManagerName;
     private String serverName;
     private ConnectionMultiplexerManager multiplexerManager;
@@ -78,6 +80,7 @@ public class ClientSessionConnection extends VirtualConnection {
             wrapper.setFrom(serverName);
             wrapper.setTo(connectionManagerName);
             wrapper.setChildElement(packet.getElement().createCopy());
+            Log.info("Client Session Connection = [" + packet + "]");
             // Deliver wrapper
             multiplexerSession.process(wrapper);
             session.incrementServerPacketCount();

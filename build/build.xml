@@ -1321,18 +1321,41 @@
         <antcall target="openfireHome"/>
     </target>
 
-    <target name="plugin speech" description="build one plugin">
+    <target name="Content Filter" description="build Content Filter">
         <mkdir dir="${plugin.dest.dir}"/>
 
-        <delete dir="${plugin.dev.dest.dir}/YandexSpeechKitPlugin"/>
-        <delete file="${plugin.dev.dest.dir}/YandexSpeechKitPlugin.jar"/>
-        <delete file="${plugin.dest.dir}/YandexSpeechKitPlugin.jar"/>
-        <buildplugin plugin="YandexSpeechKitPlugin" pluginsrc="${plugin.src.dir}"/>
+        <delete dir="${plugin.dev.dest.dir}/contentFilter"/>
+        <delete file="${plugin.dev.dest.dir}/contentFilter.jar"/>
+        <delete file="${plugin.dest.dir}/contentFilter.jar"/>
+        <buildplugin plugin="contentFilter" pluginsrc="${plugin.src.dir}"/>
 
         <!-- Update/create target/openfire directory -->
         <antcall target="openfireHome"/>
     </target>
 
+
+    <target name="YTranslaterBot" description="build YTranslaterBot">
+        <mkdir dir="${plugin.dest.dir}"/>
+
+        <delete dir="${plugin.dev.dest.dir}/YTranslaterBot"/>
+        <delete file="${plugin.dev.dest.dir}/YTranslaterBot.jar"/>
+        <delete file="${plugin.dest.dir}/YTranslaterBot.jar"/>
+        <buildplugin plugin="YTranslaterBot" pluginsrc="${plugin.src.dir}"/>
+
+        <!-- Update/create target/openfire directory -->
+        <antcall target="openfireHome"/>
+    </target>
+    <target name="UserTranslater" description="build UserTranslaterPlugin">
+        <mkdir dir="${plugin.dest.dir}"/>
+
+        <delete dir="${plugin.dev.dest.dir}/UserTranslater"/>
+        <delete file="${plugin.dev.dest.dir}/UserTranslater.jar"/>
+        <delete file="${plugin.dest.dir}/UserTranslater.jar"/>
+        <buildplugin plugin="UserTranslater" pluginsrc="${plugin.src.dir}"/>
+
+        <!-- Update/create target/openfire directory -->
+        <antcall target="openfireHome"/>
+    </target>
 
     <!-- buildplugin (MACRO) =================================================================== -->
     <macrodef name="buildplugin">

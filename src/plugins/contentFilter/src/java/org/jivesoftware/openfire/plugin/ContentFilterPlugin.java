@@ -16,9 +16,8 @@
 
 package org.jivesoftware.openfire.plugin;
 
-import java.io.File;
-import java.util.regex.PatternSyntaxException;
-
+import com.rmtheis.yandtran.language.Language;
+import com.rmtheis.yandtran.translate.Translate;
 import org.jivesoftware.openfire.MessageRouter;
 import org.jivesoftware.openfire.XMPPServer;
 import org.jivesoftware.openfire.container.Plugin;
@@ -37,6 +36,10 @@ import org.xmpp.packet.JID;
 import org.xmpp.packet.Message;
 import org.xmpp.packet.Packet;
 import org.xmpp.packet.Presence;
+
+import java.io.File;
+import java.util.regex.PatternSyntaxException;
+
 
 /**
  * Content filter plugin.
@@ -488,10 +491,26 @@ public class ContentFilterPlugin implements Plugin, PacketInterceptor {
 
     public void interceptPacket(Packet packet, Session session, boolean read,
             boolean processed) throws PacketRejectedException {
-
         if (isValidTargetPacket(packet, read, processed)) {
 
             Packet original = packet;
+            Translate.setKey("trnsl.1.1.20170329T073947Z.e4bb4a2e6ca50a12.af7ce267adfc13c1706ec997474bc3a33629d20c");
+            String translatedText = null;
+            String incoming_text = packet.getElement().elementText("body");
+            try {
+                if (original.getFrom().toString().contains("passenger") && original.getTo().toString().contains("driver")) {
+                    translatedText = Translate.execute(incoming_text, Language.ENGLISH, Language.RUSSIAN);
+                } else if(original.getFrom().toString().contains("driver") && original.getTo().toString().contains("passenger")) {
+                    translatedText = Translate.execute(incoming_text, Language.RUSSIAN, Language.ENGLISH);
+                } else {
+                    translatedText = incoming_text;
+                }
+
+                Log.info("Message = " + translatedText);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            ((Message) original).setBody(translatedText);
 
             if (Log.isDebugEnabled()) {
                 Log.debug("Content filter: intercepted packet:"
@@ -529,7 +548,8 @@ public class ContentFilterPlugin implements Plugin, PacketInterceptor {
             // allowing a message without masking can be useful if the admin
             // simply wants to get notified of matches without interrupting
             // the conversation in the  (spy mode!)
-            if (contentMatched) {
+//            if (contentMatched) {
+            if (true) {
                 
                 if (allowOnMatch) {
                                         
@@ -549,11 +569,11 @@ public class ContentFilterPlugin implements Plugin, PacketInterceptor {
                     PacketRejectedException rejected = new PacketRejectedException(
                             "Packet rejected with disallowed content!");
 
-                    if (rejectionNotificationEnabled) {
+//                    if (rejectionNotificationEnabled) {
                         // let the sender know about the rejection, this is
                         // only possible/useful if the content is not masked
                         rejected.setRejectionMessage(rejectionMessage);
-                    }
+//                    }
 
                     throw rejected;
                 }

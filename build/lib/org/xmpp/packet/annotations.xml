@@ -1,5 +1,0 @@
-<root>
-    <item name='org.xmpp.packet.JID'>
-        <annotation name='java.lang.Deprecated'/>
-    </item>
-</root>

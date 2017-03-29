@@ -16,6 +16,9 @@
 
 package org.jivesoftware.openfire.session;
 
+import java.net.UnknownHostException;
+import java.util.*;
+
 import org.jivesoftware.openfire.Connection;
 import org.jivesoftware.openfire.SessionManager;
 import org.jivesoftware.openfire.StreamID;
@@ -41,9 +44,6 @@ import org.xmpp.packet.JID;
 import org.xmpp.packet.Packet;
 import org.xmpp.packet.Presence;
 import org.xmpp.packet.StreamError;
-
-import java.net.UnknownHostException;
-import java.util.*;
 
 /**
  * Represents a session between the server and a client.
@@ -325,8 +325,7 @@ public class LocalClientSession extends LocalSession implements ClientSession {
         connection.setCompressionPolicy( connectionConfiguration.getCompressionPolicy() );
 
         // Create a ClientSession for this user.
-//        LocalClientSession session = SessionManager.getInstance().createClientSession(connection, language);
-        LocalClientSession session = SessionManager.getInstance().createClientSession(connection);
+        LocalClientSession session = SessionManager.getInstance().createClientSession(connection, language);
 
         // Build the start packet response
         StringBuilder sb = new StringBuilder(200);

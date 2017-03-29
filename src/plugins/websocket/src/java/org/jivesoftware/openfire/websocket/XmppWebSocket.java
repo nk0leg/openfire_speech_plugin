@@ -268,8 +268,7 @@ public class XmppWebSocket {
             Log.warn("Closing session due to incorrect hostname in stream header. Host: " + host);
         } else {
         	// valid stream; initiate session
-//        	xmppSession = SessionManager.getInstance().createClientSession(wsConnection, language);
-            xmppSession = SessionManager.getInstance().createClientSession(wsConnection);
+        	xmppSession = SessionManager.getInstance().createClientSession(wsConnection, language);
         	xmppSession.setSessionData("ws", Boolean.TRUE);
         }
 

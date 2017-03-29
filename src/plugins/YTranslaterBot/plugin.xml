@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : plugin.xml
+    Created on : Mar 20, 2017, 10:47 PM
+    Author     : Oleg Krotenko
+    Description:
+        Required plugin.xml for YTranslateBot plugin.
+-->
+
+<plugin>
+    <class>org.jivesoftware.openfire.plugin.YTranslaterBot</class>
+    <name>YTranslateBot</name>
+    <description>YTranslaterBot is a plugin demonstrating the use of Yandex speech translate API for a chattranslating.</description>
+    <author>Luxoft</author>
+    <version>0.0.1</version>
+    <date>03/20/2017</date>
+    <minServerVersion>4.1</minServerVersion>
+    <licenseType>gpl</licenseType>
+</plugin>
